@@ -1,0 +1,8 @@
+<ul><% @categories.each do |category| %>
+   <li> <%= category.name %></li>
+  Number of Posts: <%= category.post_count %>
+   <% category.posts.each do |post| %>
+    
+    <ol><li><%= post.title %></li></ol>
+    <% end %>
+    <% end %></ul>
